@@ -9,13 +9,14 @@
   top: 0;
   bottom: 60px;
   width: 100%;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 }
 .home_tabs {
   position: absolute;
   bottom: 0;
   height: 60px;
   width: 100%;
+  z-index: 99;
   /* background-color: lightblue; */
 }
 .home_tabs .four {

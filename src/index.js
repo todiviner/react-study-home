@@ -24,7 +24,18 @@ axios.interceptors.response.use(function (response) {
 }, function (error) {
   // 对响应错误做点什么
   return Promise.reject(error)
-});
+})
+// 添加请求拦截 因为除了 login 之外 不用 token(密钥) 其他都要请求 所以过滤掉
+axios.interceptors.request.use(function (config) {
+  // 在发送请求之前 设置好token
+  if (!window.location.href.endsWith('/login')) {
+    config.headers.Authorization = localStorage.getItem('loginToken')
+  }
+  return config
+}, function (error) {
+  // 对请求错误做些什么
+  return Promise.reject(error);
+})
 
 
 ReactDOM.render(<App />, document.getElementById('root'))
