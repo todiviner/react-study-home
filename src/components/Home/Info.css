@@ -1,0 +1,140 @@
+.info-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.info-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  background-color: #b5efff;
+  text-align: center;
+  font-weight: 600;
+}
+/* 滚动条样式 */
+.info-content .ui.attached.segment::-webkit-scrollbar {
+  width: 3px;
+}
+.info-content .ui.attached.segment::-webkit-slider-thumb {
+  background-color: #cbdaea;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  min-height: 2em;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+.info-content .ui.attached.segment::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.info-content {
+  margin-bottom: 60px;
+  overflow-y: auto;
+}
+
+
+
+.info-content,
+.info-content > div,
+.info-content > div .view {
+  height: 100%;
+}
+
+.info-content .ui.attached.segment {
+  border: 0 none;
+  padding: 0;
+  top: 80px;
+  bottom: 0px;
+  position: absolute;
+  overflow-y: auto;
+}
+.info-content .ui.segment {
+  border: 0 none;
+  z-index: 999;
+  height: 100%;
+}
+.info-content > .ui.segmentui.bottom.attached  {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  margin: 0 0 14px;
+  padding: 5px 15px 0;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34,36,38,.15);
+}
+
+.info-content  .content  {
+  height: 40px;
+  line-height: 39px;
+}
+.info-content  .content .content-title {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info-content .ui.items > .item {
+  box-sizing: border-box;
+}
+.info-content .ui.items > .item:first-child {
+  margin-top: 10px;
+}
+
+/* 问答相关的样式 */
+.info-ask-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.info-ask-list li {
+  position: relative;
+  margin: 5px 10px;
+  padding: 10px 0;
+}
+
+.info-ask-list li .title {
+  color: #000;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 16px;
+}
+.info-ask-list li .title .cate {
+  box-sizing: border-box;
+  background-color: #c6f3ff;
+  margin-right: 5px;
+  padding: 0px 3px;
+  display: inline-block;
+  font-size: 14px;
+}
+.info-ask-list li .user {
+  font-size: 12px;
+  color: gray;
+  padding-left: 5px;
+}
+.info-ask-list li .info {
+  font-size: 10px;
+  color: gray;
+  padding-left: 5px;
+}
+.info-ask-list li .tag {
+  padding-left: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.info-ask-list li .tag span {
+  font-size: 12px;
+  color: #000;
+  border: 1px solid gray;
+  margin-right: 5px;
+  padding: 2px 5px;
+}
+.info-ask-list li .tag span:last-child {
+  float: right;
+  border: 0px;
+}
+.info-ask-btn {
+  padding: 10px 15px;
+}
+/* touch-loader */
