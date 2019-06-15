@@ -95,7 +95,7 @@ class Main extends React.Component {
           [dataName]: data.list
         })
       } else {
-        console.log('服务器繁忙，获取数据失败')
+        // console.log('服务器繁忙，请等待')
       }
     })
   }
@@ -108,8 +108,10 @@ class Main extends React.Component {
       this.requestData('homes/faq', 'faqList'), // 好客问答部分
       this.requestData('homes/house', 'houseList') // 房屋列表部分
     ])
-    console.log('所有的数据全部请求完成了')
+    // console.log('所有的数据全部请求完成了')
 
+    // console.log(this.state.faqList)
+    
     this.setState({
       loading: false
     })

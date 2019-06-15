@@ -30,6 +30,8 @@ class Login extends React.Component {
       // 登录已经来过设置 token
       // console.log(11)
       localStorage.setItem('loginToken', data.token)
+      // 设置 登录 uid
+      localStorage.setItem('uid', data.uid)
       // 需要跳转到 home 页面
       history.push('/home')
     } else {

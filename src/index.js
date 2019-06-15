@@ -15,6 +15,7 @@ React.Component.prototype.axios = axios
 
 // 全局配置 axios 基础路径 
 axios.defaults.baseURL = 'http://47.96.21.88:8086/'
+// axios.defaults.baseURL = 'http://localhost:9999/'
 
 // 响应拦截器就是过滤器，把不要的数据过滤掉，要自己想要的数据
 // 添加响应拦截器

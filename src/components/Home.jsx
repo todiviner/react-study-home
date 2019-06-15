@@ -6,10 +6,10 @@ import './Home.css'
 import { Grid, Icon } from 'semantic-ui-react'
 
 // 导入 路由需要跳转的组件
-import Main from './Home/Main'
-import Chat from './Home/Chat'
-import Info from './Home/Info'
-import My from './Home/My'
+import Main from './Home/main/Main'
+import Chat from './Home/chat/Chat'
+import Info from './Home/info/Info'
+import My from './Home/my/My'
 
 // 导入 路由模块
 import { NavLink, Switch, Route } from 'react-router-dom'
